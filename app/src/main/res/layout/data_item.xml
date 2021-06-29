@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="4dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/btn_data_value"
+            android:layout_toLeftOf="@id/btn_data_layout"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="judul"
+                android:textColor="#121212"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_genre"
+                android:text="genre"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_director"
+                android:text="dire"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_durasi"
+                android:text="dure"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_data_layout">
+            <ImageButton
+                android:id="@+id/btn_data_edit"
+                style="@style/btn_data"
+                android:background="@color/red_101"
+                android:src="@drawable/ic_baseline_create_24"
+                android:padding="8dp"
+                />
+            <ImageButton
+                android:id="@+id/btn_data_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/btn_data"
+                android:background="@color/teal_700"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:padding="8dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
